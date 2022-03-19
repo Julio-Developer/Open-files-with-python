@@ -1,0 +1,135 @@
+Python
+Origem: Wikipédia, a enciclopédia livre.
+Disambig grey.svg Nota: Para outros significados, veja Python (desambiguação).
+Python
+Logo do Python
+Paradigma	Multiparadigma:
+orientada a objetosimperativafuncional
+Surgido em	20 de fevereiro de 1991 (31 anos)[1]
+Última versão	3.10.2 (14 de janeiro de 2022; há 2 meses[2])
+Versão em teste	3.11.0a6 (7 de março de 2022; há 10 dias[3])
+Criado por	Guido van Rossum[1]
+Estilo de tipagem	
+dinâmicaforteduckgradual (desde a versão 3.5)
+Principais implementações	
+CPythonIronPythonJythonPyPyStackless
+Influenciada por	
+ABC[4]ALGOL 68C[4]HaskellIconJavaLispModula-3[4]PerlSmalltalk
+Influenciou	
+BooCoffeeScriptDFantomGDScriptGoGroovyJavaScriptJuliaNimPyRubySquirrelSwift
+Licença:	Python Software Foundation License[5]
+Extensão do arquivo:	
+.py.pyc.pyd.pyo.pyw.pyz
+Página oficial	www.python.org
+Python é uma linguagem de programação de alto nível,[6] interpretada de script, imperativa, orientada a objetos, funcional, de tipagem dinâmica e forte. Foi lançada por Guido van Rossum em 1991.[1] Atualmente, possui um modelo de desenvolvimento comunitário, aberto e gerenciado pela organização sem fins lucrativos Python Software Foundation. Apesar de várias partes da linguagem possuírem padrões e especificações formais, a linguagem, como um todo, não é formalmente especificada. O padrão de facto é a implementação CPython.
+
+A linguagem foi projetada com a filosofia de enfatizar a importância do esforço do programador sobre o esforço computacional. Prioriza a legibilidade do código sobre a velocidade ou expressividade. Combina uma sintaxe concisa e clara com os recursos poderosos de sua biblioteca padrão e por módulos e frameworks desenvolvidos por terceiros.
+
+Python é uma linguagem de propósito geral de alto nível, multiparadigma, suporta o paradigma orientado a objetos, imperativo, funcional e procedural. Possui tipagem dinâmica e uma de suas principais características é permitir a fácil leitura do código e exigir poucas linhas de código se comparado ao mesmo programa em outras linguagens. Devido às suas características, ela é utilizada, principalmente, para processamento de textos, dados científicos e criação de CGIs para páginas dinâmicas para a web. Foi considerada pelo público a 3ª linguagem "mais amada", de acordo com uma pesquisa conduzida pelo site Stack Overflow em 2018[7] e está entre as 5 linguagens mais populares, de acordo com uma pesquisa conduzida pela RedMonk.[8]
+
+O nome Python teve a sua origem no grupo humorístico britânico Monty Python,[9] criador do programa Monty Python's Flying Circus, embora muitas pessoas façam associação com o réptil do mesmo nome (em português, píton ou pitão).
+
+
+Índice
+1	História
+2	Filosofia
+2.1	Construções
+2.2	Tipos de dado
+2.3	Palavras reservadas
+2.4	Operadores
+2.5	Interpretador interativo
+2.6	Análise léxica
+2.6.1	Indentação
+2.7	Compilador de bytecode
+2.8	Orientação a objetos
+2.9	Programação funcional
+2.10	Tratamento de exceções
+2.11	Biblioteca padrão
+2.12	Interoperabilidade
+2.13	Comentários
+3	Plataformas disponíveis
+4	Implementações
+5	Desenvolvimento
+6	Licença
+7	Módulos e frameworks
+7.1	Interfaces gráficas
+8	Ambientes de desenvolvimento integrado
+9	Aplicações
+10	Ver também
+11	Referências
+12	Bibliografia
+13	Ligações externas
+História
+
+Guido van Rossum, São Francisco, Califórnia
+O Python foi concebido no final de 1989[6][9] por Guido van Rossum no Instituto de Pesquisa Nacional para Matemática e Ciência da Computação (CWI), nos Países Baixos, como um sucessor da ABC capaz de tratar exceções e prover interface com o sistema operacional Amoeba[10] através de scripts. Também da CWI, a linguagem ABC era mais produtiva que C, ainda que com o custo do desempenho em tempo de execução. Mas ela não possuía funcionalidades importantes para a interação com o sistema operacional, uma necessidade do grupo. Um dos focos primordiais de Python era aumentar a produtividade do programador.[9]
+
+Python foi feita com base na linguagem ABC, possui parte da sintaxe derivada do C, compreensão de listas, funções anonimas e função map de Haskell. Os iteradores são baseados na Icon, tratamentos de exceção e módulos da Modula-3, expressões regulares de Perl.
+
+Em 1991, Guido publicou o código (nomeado versão 0.9.0) no grupo de discussão alt.sources.[1] Nessa versão já estavam presentes classes com herança, tratamento de exceções, funções e os tipos de dado nativos list, dict, str, e assim por diante. Também estava presente nessa versão um sistema de módulos emprestado do Modula-3. O modelo de exceções também lembrava muito o do Modula-3, com a adição da opção else clause.[10]Em 1994 foi formado o principal fórum de discussão do Python, comp.lang.python, um marco para o crescimento da base de usuários da linguagem.
+
+A versão 1.0 foi lançada em janeiro de 1994. Novas funcionalidades incluíam ferramentas para programação funcional como lambda, map, filter e reduce. A última versão enquanto Guido estava na CWI foi o Python 1.2. Em 1995, ele continuou o trabalho no CNRI em Reston, Estados Unidos, de onde lançou diversas versões. Na versão 1.4 a linguagem ganhou parâmetros nomeados (a capacidade de passar parâmetro pelo nome e não pela posição na lista de parâmetros) e suporte nativo a números complexos, assim como uma forma de encapsulamento.[11]
+
+Ainda na CNRI, Guido lançou a iniciativa Computer Programming for Everybody (CP4E; literalmente, "Programação de Computadores para Todos"), que visava tornar a programação mais acessível, um projeto financiado pela DARPA.[12] Atualmente o CP4E encontra-se inativo.
+
+Em 2000, o time de desenvolvimento da linguagem se mudou para a BeOpen a fim de formar o time PythonLabs. A CNRI pediu que a versão 1.6 fosse lançada para marcar o fim de desenvolvimento da linguagem naquele local. O único lançamento na BeOpen foi o Python 2.0, e após o lançamento o grupo de desenvolvedores da PythonLabs agrupou-se na Digital Creations.
+
+Python 2.0 implementou list comprehension, uma relevante funcionalidade de linguagens funcionais como SETL e Haskell. A sintaxe da linguagem para essa construção é bastante similar a de Haskell, exceto pela preferência do Haskell por caracteres de pontuação e da preferência do python por palavras reservadas alfabéticas. Essa versão 2.0 também introduziu um sistema coletor de lixo capaz de identificar e tratar ciclos de referências.[13]
+
+Já o 1.6 incluiu uma licença CNRI substancialmente mais longa que a licença CWI que estavam usando nas versões anteriores. Entre outras mudanças, essa licença incluía uma cláusula atestando que a licença era governada pelas leis da Virgínia. A Free Software Foundation alegou que isso era incompatível com a GNU GPL. Tanto BeOpen quanto CNRI e FSF negociaram uma mudança na licença livre do Python que o tornaria compatível com a GPL. Python 1.6.1 é idêntico ao 1.6.0, exceto por pequenas correções de falhas e uma licença nova, compatível com a GPL.[14]
+
+Python 2.1 era parecido com as versões 1.6.1 e 2.0. Sua licença foi renomeada para Python Software Foundation License.[5] Todo código, documentação e especificação desde o lançamento da versão alfa da 2.1 é propriedade da Python Software Foundation (PSF), uma organização sem fins lucrativos fundada em 2001, um modelo tal qual da Apache Software Foundation.[14] O lançamento incluiu a mudança na especificação para suportar escopo aninhado, assim como outras linguagens com escopo estático.[15] Esta funcionalidade estava desativada por padrão, e somente foi requerida na versão 2.2.
+
+Uma grande inovação da versão 2.2 foi a unificação dos tipos Python (escritos em C) e classes (escritas em Python) em somente uma hierarquia. Isto tornou o modelo de objetos do Python consistentemente orientado a objeto.[16] Também foi adicionado generator, inspirado em Icon.[17]
+
+O incremento da biblioteca padrão e as escolhas sintáticas foram fortemente influenciadas por Java em alguns casos: o pacote logging[18] introduzido na versão 2.3,[19] o analisador sintático SAX, introduzido na versão 2.0 e a sintaxe de decoradores que usa @,[20] adicionadas na versão 2.4.[21]
+
+Em 1 de outubro de 2008 foi lançada a versão 2.6, já visando a transição para a versão 3.0 da linguagem. Entre outras modificações, foram incluídas bibliotecas para multiprocessamento, JSON e E/S, além de uma nova forma de formatação de cadeias de caracteres.[22]
+
+Atualmente a linguagem é usada em diversas áreas, como servidores de aplicação e computação gráfica. Está disponível como linguagem de script em aplicações como OpenOffice (Python UNO Bridge), Blender e pode ser utilizada em procedimentos armazenados no sistema gerenciador de banco de dados PostgreSQL (PL/Python).
+
+A terceira versão da linguagem foi lançada em dezembro de 2008,[23] chamada Python 3.0 ou Python 3000. Com noticiado desde antes de seu lançamento,[24] houve quebra de compatibilidade com a família 2.x para corrigir falhas que foram descobertas neste padrão, e para limpar os excessos das versões anteriores.[9] A primeira versão alfa foi lançada em 31 de agosto de 2007, a segunda em 7 de dezembro do mesmo ano.
+
+Mudanças da versão incluem a alteração da palavra reservada print, que passa a ser uma função, tornando mais fácil a utilização de uma versão alternativa da rotina. Em Python 2.6, isso já está disponível ao adicionar o código from __future__ import print_function.[25] Também, a mudança para Unicode de todas as cadeias de caracteres.[26]
+
+Em 2012, foi criado o Raspberry Pi, cujo nome foi baseado na linguagem Python. Uma das principais linguagens escolhidas é Python. Python influenciou várias linguagens, algumas delas foram Boo e Cobra, que usa a indentação como definição de bloco e Go, que se baseia nos princípios de desenvolvimento rápido de Python.
+
+Atualmente, Python é um dos componentes padrão de vários sistemas operacionais, entre eles estão a maioria das distribuições do Linux, AmigaOS 4, FreeBSD, NetBSD, OpenBSD e OS X. A linguagem se tornou a padrão no curso de ciências da computação do MIT em 2009
+
+Filosofia
+Python 3. The standard type hierarchy.png
+Parte da cultura da linguagem gira ao redor de The Zen of Python, um poema que faz parte do documento "PEP 20 (The Zen of Python)",[27] escrito pelo programador em Python de longa data Tim Peters, descrevendo sumariamente a filosofia do Python. Pode-se vê-lo através de um easter egg do Python pelo comando:
+
+>>> import this
+Construções
+Construções de Python incluem: estrutura de seleção (if, else, elif); estrutura de repetição (for, while), que itera por um container, capturando cada elemento em uma variável local dada; construção de classes (class); construção de sub-rotinas (def); construção de escopo (with), como por exemplo para adquirir um recurso.
+
+Tipos de dado
+A tipagem de Python é forte, pois os valores e objetos têm tipos bem definidos e não sofrem coerções como em C ou Perl. São disponibilizados diversos tipos de dados nativos:
+
+Tipo de dado	Descrição	Exemplo da sintaxe
+bool	Booleano	True ou False
+int	Número de precisão fixa, é transparentemente convertido para long caso não caiba em um int.	42
+2147483648L
+float	Ponto flutuante	3.1415927
+complex	Número complexo	3+2j
+list	Lista heterogênea mutável	[4.0, 'string', True]
+tuple	Tupla imutável	(4.0, 'string', True)
+range	Sequência de números imutável que pode ser transformada em lista	range(10)
+range(0, 10)
+range(0, 10, 1)
+set, frozenset	Conjunto não ordenado, não contém elementos duplicados	set([4.0, 'string', True])
+frozenset([4.0, 'string', True])
+str, unicode	Uma cadeia de caracteres imutável	'Wikipedia'
+u'Wikipedia'
+bytes, bytearray, memoryview	Sequência binária	b'Wikipedia'
+bytearray(b'Wikipedia')
+memoryview(b'Wikipedia')
+dict	Conjunto associativo	{'key1': 1.0, 'key2': False}
+Python também permite a definição dos tipos de dados próprios, através de classes. Instâncias são construídas invocando a classe (FooClass()), e as classes são instância da classe type, o que permite metaprogramação e reflexão. Métodos são definidos como funções anexadas à classe, e a sintaxe instância.método(argumento) é um atalho para Classe.método(instância, argumento). Os métodos devem referenciar explicitamente a referência para o objeto incluindo o parâmetro self como o primeiro argumento do método.[28]
+
+Antes da versão 3.0, Python possuía dois tipos de classes: "old-style" e "new-style". Classes old-style foram eliminadas no Python 3.0, e todas são new-style. Em versões entre 2.2 e 3.0, ambos tipos de classes podiam ser usadas. A sintaxe de ambos estilos é a mesma, a diferença acaba sendo de onde objeto da classe é herdado, direta ou indiretamente (todas classes new-style herdam de object e são instancias de type). As classes new-styles nada mais são que tipos definidos pelo usuário.
+
+Palavras reservadas
+O Python 3 define as seguintes palavras reservadas:[29]
+
